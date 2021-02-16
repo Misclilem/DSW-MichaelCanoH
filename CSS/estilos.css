@@ -1,6 +1,5 @@
-	<style type="text/css">
-li {color:red;}
-a {color:red; text-decoration: line;text-shadow:  3px 3px 6px red ; font-size: 20px;}
+
+	a {color:red; text-decoration: line;text-shadow:  3px 3px 6px red ; font-size: 20px;}
 .slider {
   background-color: transparent;
   margin: auto;
@@ -11,13 +10,26 @@ a {color:red; text-decoration: line;text-shadow:  3px 3px 6px red ; font-size: 2
    height: 150px;
   width: 500px;
  }
+div aside{ width: 10%;
+ height: 5%;
+}
 
-.slider ul li img {
+ aside{
+ 	 width: 10%;
+ 	 height: 5%;
+ 	 margin-left: 80%;
+
+ 	 position: absolute;
+ }
+ .aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 70%;}
+
+ .slider ul li img {
   height: 90%;
   width: 70%;
   margin: auto;
   }
 	.article {color:red; font-size: 20px; margin: auto;position: relative;}
+
   h3 {color:darkslategray; background-color: bisque; font-size: 20px;text-align: center; margin: auto;height:20px;  width: 80px}
   p{ font-size: 14px;text-align: justify right; font-weight: black; padding: 8px; background: bisque; border-bottom: 2px solid black;
 color: darkslategray; border-top: 3px solid black;margin: auto;  height:20px;  width: 220px;
@@ -83,4 +95,3 @@ footer {
    height: 50px;
    color: white;
 }
-</style>
