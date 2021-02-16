@@ -21,7 +21,7 @@ div aside{ width: 10%;
 
  	 position: absolute;
  }
- .aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 70%;}
+ .aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 75%;}
 
  .slider ul li img {
   height: 90%;
@@ -77,7 +77,7 @@ footer {
 }
 
 .social i {
-  font-size: 80%;
+  font-size: 150%;
   margin: 1%;
   padding: 5%;
   color: #c3d7df;
