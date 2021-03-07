@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-    <style type="text/css">
-  body {
-  background-image: url(https://allegra.flowersetcfresno.com/pic/5657985_full-fondo-pantalla-azul-3d-fondos-de-pantalla-azul-canal-3d-resumen-2560x1600-hd-imagen.jpg);
-   background-repeat: no-repeat, repeat;
-background-size: auto;
-height: auto;width: auto;
-}
-a {color:red; text-decoration: line;text-shadow:  3px 3px 6px red ; font-size: 20px;}
+<meta charset="utf-8" name="author" content="Michael Cano" name="description"  name="keywords" content="index">
+    <style>
+
+a {color:darkslategrey; text-decoration: line;text-shadow:  3px 3px 6px red ; font-size: 20px;}
 .slider {
-background-color: transparent;
 margin: auto;
 height: 40px;
 width: 50%;
@@ -28,7 +22,6 @@ aside{
  width: 10%;
  height: 5%;
  margin-left: 80%;
-
  position: absolute;
 }
 .aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 70%;}
@@ -69,6 +62,35 @@ body {
 margin: 0;
 margin-bottom: 40px;
 }
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
 footer {
  position:absolute;
  left:0px;
@@ -89,11 +111,11 @@ display: inline;
 font-size: 150%;
 margin: 1%;
 padding: 5%;
-color: #c3d7df;
+color: darkslategrey;
 }
 
 .social i:hover {
-color: #f5f5f5;
+color: darkslategrey;
 }
 
 .second-footer {
@@ -102,7 +124,7 @@ color: #f5f5f5;
  bottom: 0;
  width: 100%;
  height: 50px;
- color: white;
+ color: darkslategrey;
 }
 
 </style>
@@ -112,27 +134,20 @@ color: #f5f5f5;
   <div align="center">
   <img src="IMAGENES\LOGOS\LOGO_UNAD.JPG" height= "80";  width="120">
 </div>
-          <nav>
-              <li>
-                <a href="index.html" class="current"> Home </a>
-              </li>
-              <li>
-                <a href="Conceptos.html"> Conceptos</a>
-              </li>
-              <li>
-                <a href="recursos.html">Recursos</a>
-              </li>
-              <li><a href="autoevaluacion.html">Autoevaluación</a>
-              </li>
-              <li><a href="Contacto.html">Contacto</a>
-              </li>
-                <li><a href="#OBJETIVO">
-                Objetivo
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+<div class="dropdown"><li class=" even">
+  <button class="mainmenubtn"> Menu actividades</button><li class=" odd">
+  <div class="dropdown-child">
+    <a href="index.html">Home</a>
+  <a href="Conceptos.html"> Conceptos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="autoevaluacion.html">Autoevaluación</a>
+      <a href="Contacto.html">Contacto</a></a>
+    </div>
+</div>
+        <div class="aside">
+              <aside class="aside-1" >
+                <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
       </header>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -142,10 +157,7 @@ color: #f5f5f5;
 </head>
 <body>
 
-    <aside class="aside-1" >
-        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </aside>
-
+</div>
   <!-- SLIDER -->
     <div id="slide-wrap">
       <section class="slider">
@@ -161,7 +173,7 @@ color: #f5f5f5;
 <br><br><br><br><br>
  <section class="one-third" id="OBJETIVO">
 <table>
-<caption> OBJETIVOS
+<caption> OBJETIVOS CONSTRUCCION DE UNA WEB
 <img src="imagenes/IMG/img1.jpg" alt="IMG1" width="80"height="80" margin=10px; float=right;></caption>
 <tr> <th>OBJETIVO GENERAL</th> <th>OBJETIVO ESPECIFICO 1</th> <th>OBJETIVO ESPECIFICO 2</th><th>OBJETIVO ESPECIFICO 3</th>
 </tr>

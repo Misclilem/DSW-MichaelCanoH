@@ -1,31 +1,66 @@
 <html>
 <head>
-	<meta charset="UTF-8">
+<meta charset="utf-8" name="author" content="Michael Cano" name="description" content="juego para el OVI del curso de diseños de sitios web de la unad" name="keywords" content="unad, OVI, juego">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style type="text/css">
-ul {color:white;}
+   <link rel="stylesheet" href="Style.css">
+     <title>Diseños sitios Web</title>
+     <style>
+         body {
+             font-family: 'Comfortaa', arial;
+             font-size: 15px;
+             text-shadow: 4px 4px 4px #aaa;
+               }
+
+ul {color:darkslategrey;}
 a {
-	color:white; text-decoration: line;text-shadow:  5px 5px 10px ;
+	color:darkslategrey; text-decoration: line;text-shadow:  5px 5px 10px ;
 	 font-size: 20px;}
-body {
-  background-image: url(https://www.wallpapertip.com/wmimgs/40-403776_data-src-android-4d-wallpaper-download.jpg);
-   background-repeat: no-repeat, repeat;
-background-size: 1350px 750px;
-}
+
 html {
   min-height: 100%;
   position: relative;
 }
+ul {color:white;}
+nav{ background-color: inherit;}
 body {
-  margin: 0;
-  margin-bottom: 40px;
+margin: 0;
+margin-bottom: 40px;
+}
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
 }
 
   h2 {
     font-size: 135%;
     line-height: 155%;
     font-weight: 500;
-    color: white;
+    color: darkslategrey;
     text-align: center;
     text-transform: uppercase;
     padding: 0;
@@ -34,18 +69,27 @@ body {
     font-size: 135%;
     line-height: 155%;
     font-weight: 500;
-    color: white;
+    color: darkslategrey;
     text-align: center;
     text-transform: uppercase;
     padding: 0;
   }
-  .second-FOOTER {
-    border-top: 1px solid black;
-    text-align: right;
-    margin: 0;
-    width: 100%;
-    height: 50px;
-  }
+
+	div aside{ width: 10%;
+	height: 5%;
+	position: absolute;
+	}
+
+	aside{
+	 width: 10%;
+	 height: 5%;
+	 margin-left: 80%;
+	 position: absolute;
+	}
+	.aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 70%;position: absolute;}
+
+
+
   footer {
      position:absolute;
      left:0px;
@@ -53,63 +97,46 @@ body {
      height:30px;
      width:100%;
     }
+		.second-FOOTER {
+	    border-top: 1px solid black;
+	    text-align: right;
+	    margin: 0;
+	    width: 100%;
+	    height: 50px;
+	  }
 </style>
-	<link rel="stylesheet" type="text/css" href="css/estilos presentacion.css">
-	<title>Autoevaluación
+	<title>autoevaluacion
 	</title>
 </head>
-<div id="banner-wrapper">
-      <header>
-        <div id="header-inner">
-            <nav>
-                  <ul>
-              <li>
-                <a href="index.html" class="current">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#Autoevaluación">
-                  Autoevaluación
-                </a>
-              </li>
-            <li>
-              <a href="#Autoevaluación">
-                Autoevaluación
-              </a>
-            </li>
-          </ul>
-          </nav>
-        </div>
-      </header>
-<body>
-
 <div align="center">
 	<img src="imagenes\logos\LOGO_UNAD.JPG" height= "80";  width="120">
 </div>
+<div id="banner-wrapper">
+	<div class="aside">
+	      <aside class="aside-1" >
+	        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	    </aside>
+	</div>
+      <header>
+				<div class="dropdown"><li class=" even">
+				  <button class="mainmenubtn"> Menu actividades</button><li class=" odd">
+				  <div class="dropdown-child">
+				    <a href="index.html">Home</a>
+				  <a href="https://es.educaplay.com/recursos-educativos/8552297-disenos_de_sitios_web.html">Crucigrama</a>
+						    <a href="https://es.educaplay.com/recursos-educativos/8565810-disenos_de_sitios_web.html">Quiz</a>
+						  </div>
+		</header>
+<body>
+	<br><br><br><br>
+	<div class="content">
+	<ul class="nav">
+		<li><h2>Evaluacion del sitio</h2> <embed src="matriz.pdf"type="application/pdf" width="60%" height="400px" /></li>
+	</ul>
+	</li>
+	</div>
 <a href="DSW-MichaelCanoh\index.html">
 </a>
-  <section class="one-third">
-    <div class="icon-wrap">
-      <i class="fa fa-file-code-o"></i>
-    </div>
-    <h2>Autoevaluación</h2>
-
-  </section>
-  <section class="subir">
-  <li>
-      <a href="#">subir</a>
-    </li>
-
-    </section>
-  <div class="clearfix-padding"></div>
-     <!-- LEFT COL -->
-     <section class="left-col" id="Historia">
-       <h3>Autoevaluación</h3>
-   </section>
-
-
-	<FOOTER>
+<FOOTER>
 <div align="right">
 <a href="index.html"><img src="imagenes/ICONO/1.jpg" width="60"
 height= "50"> </a>
