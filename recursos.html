@@ -3,12 +3,66 @@
 	<meta charset="utf-8" name="author" content="Michael Cano" name="description" name="keywords" content="unad, OVI, juego">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
+		html {
+		min-height: 100%;
+		position: relative;
+		}
 ul {color:darkslategrey;}
 nav{ background-color: inherit;}
 a {
 	color:darkslategrey; text-decoration: line;text-shadow:  5px 5px 10px ;
 	 font-size: 20px;}
+	 body {
+	  margin: 0;
+	  margin-bottom: 40px;
+	}
+	.mainmenubtn {
+	    background-color: skyblue;
+	    color: darkslategrey;
+	    border: none;
+	    cursor: pointer;
+	    padding:20px;
+	    margin-top:20px;
+	}
+	.mainmenubtn:hover {
+	    background-color: white;
+	    }
+	.dropdown {
+	    position: absolute;
+	    display: inline;
 
+	}
+	.dropdown-child {
+	    display: none;
+	    background-color: skyblue;
+	    min-width: 200px;
+	}
+	.dropdown-child a {
+	    color: darkslategrey;
+	    padding: 20px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown:hover .dropdown-child {
+	    display: inline-block;
+	}
+	div aside{ width: 10%;
+	height: 5%;
+	}
+
+	aside{
+	 width: 10%;
+	 height: 5%;
+	 margin-left: 80%;
+	 position: absolute;
+	}
+	.aside-1{overflow: scroll;display:flex;float:right;width: 15%;height: 70%;}
+
+	.slider ul li img {
+	height: 90%;
+	width: 70%;
+	margin: auto;
+	}
 .second-footer {
   background-color: transparent;
   position: absolute;
@@ -19,10 +73,10 @@ a {
 	margin: right;
 }
 footer {
-   position:absolute;
+   position:fixed;
    left:0px;
    bottom:0px;
-   height:30px;
+   height:120px;
    width:100%;
 	 margin-right: auto;
   }
@@ -32,36 +86,50 @@ footer {
 	</title>
 </head>
 <body>
-
 <div align="center">
 	<img src="imagenes\logos\logo_unad.jpg" height= "80";  width="120">
 </div>
 <a href="DSW-MichaelCanoh\index.html">
 </a>
 <header>
+	<article class="Videos">
 		<img src="#" alt="">
 		<nav>
 			<ul>
-				<li><a href="https://www.aprenderaprogramar.com">APRENDER A PROGRAMAR</a></li>
-				<li><a href="https://www.youtube.com">YOUTUBE</a></li>
-				<li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS INFORMACION</a></li>
-				<li><a href="https://www.w3schools.com/cssref">W3SCHOOLS.COM</a></li>
-				<li><a href="http://www.naiarafernandez.com/conceptos-basicos-css">COMUNICACIÓN MAI ONLINE</a></li>
-				<li><a href="https://desarrolloweb.com/articulos/600.php">DESARROLADORES.COM</a></li>
-				<h2>Videos orientadores</h2>
-				                <iframe width="400" height="200" src="https://youtube.com/embed/rbuYtrNUxg4" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				                <iframe width="400" height="200" src="https://youtube.com/embed/Q7rJPuq4nuI" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-												 <iframe width="400" height="200" src="https://youtube.com/embed/lTBygjRo6Ik" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="dropdown"><li class=" even">
+				  <button class="mainmenubtn"> Menu paginas orientadoras</button><li class=" odd">
+				  <div class="dropdown-child">
+					<a href="https://www.aprenderaprogramar.com">APRENDER A PROGRAMAR</a>
+				<a href="https://www.youtube.com">YOUTUBE</a>
+				<a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS INFORMACION</a>
+				<a href="https://www.w3schools.com/cssref">W3SCHOOLS.COM</a>
+				<a href="http://www.naiarafernandez.com/conceptos-basicos-css">COMUNICACIÓN MAI ONLINE</a>
+				<a href="https://desarrolloweb.com/articulos/600.php">DESARROLADORES.COM</a>
+				</div>
 			</ul>
 		</nav>
+		<div class="aside">
+					<aside class="aside-1" >
+						<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</aside>
 	</header>
+	<br><br><br>}
+	<div class="videos">
+		<h2>Videos orientadores</h2>
+										<iframe width="400" height="200" src="https://youtube.com/embed/rbuYtrNUxg4" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="400" height="200" src="https://youtube.com/embed/Q7rJPuq4nuI" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										 <iframe width="400" height="200" src="https://youtube.com/embed/lTBygjRo6Ik" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										 <iframe width="400" height="200" src="https://youtube.com/embed/acZuHuQQXOQ" frameborder="0" allow="accelerometer; autoplay=false; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-	<FOOTER>
-<div align="right">
-<a href="index.html"><img src="imagenes/icono/1.jpg" width="60"
-height= "50"> </a>
-</div>
- </FOOTER>
-
-</body>
+	</div>
+	<footer class="contacto">
+						<p>Michael Stuar Cano(UNAD)&#174;
+	 <a href="https://twitter.com/UniversidadUNAD" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	 <img src="imagenes/logos/logo.jpg" alt="" width="40" height="40"> escribenos 3214581490<a href="mailto:miscejay0726@gmail.com"><img src="imagenes/logos/correo.jpg" width="40" height="40" >E-mail</a>
+	 </p>
+	 <div align="right">
+	 <a href="index.html">volver pagina principal<img src="imagenes/icono/1.jpg" alt="" width="48" height= "48"align= "right"></a>
+	 </div>
+	</footer>
+<body>
 </html>
